@@ -1,6 +1,6 @@
 # video-analyzer
 
-Claude Code plugin that extracts frames from a video (local file or URL) so Claude can analyze them visually. Ships a `/video` slash command backed by ffmpeg.
+Claude Code plugin that extracts frames from a video (local file or URL) so Claude can analyze them visually. Ships a `/video-analyzer:video` slash command backed by ffmpeg.
 
 ## Install
 
@@ -20,8 +20,10 @@ Then add the marketplace and install the plugin inside Claude Code:
 ## Usage
 
 ```
-/video <video_path_or_url> [options]
+/video-analyzer:video <video_path_or_url> [options]
 ```
+
+> Claude Code plugin commands are always namespaced as `/<plugin>:<command>`. The short form `/video` will not resolve — use the fully-qualified name above.
 
 Options:
 
@@ -39,10 +41,10 @@ Modes:
 ## Examples
 
 ```
-/video walkthrough.mov
-/video bug.mp4 --max 30
-/video demo.mov --mode interval --fps 0.5
-/video "https://example.com/demo.mp4"
+/video-analyzer:video walkthrough.mov
+/video-analyzer:video bug.mp4 --max 30
+/video-analyzer:video demo.mov --mode interval --fps 0.5
+/video-analyzer:video "https://example.com/demo.mp4"
 ```
 
 Extracted frames land in `frames/<video_name>_<timestamp>/` inside the plugin directory and Claude reads each one with the Read tool to describe or debug what's on screen.

@@ -2,7 +2,7 @@ Extract frames from a video (local file or URL) and analyze them visually.
 
 ## Usage
 
-The user provides a video path or URL after `/video`, with optional flags:
+The user provides a video path or URL after `/video-analyzer:video`, with optional flags:
 
 ```bash
 bash ${CLAUDE_PLUGIN_ROOT}/analyze_video.sh $ARGUMENTS
@@ -19,9 +19,9 @@ If no `--max` is specified in `$ARGUMENTS`, add `--max 20` as default.
 
 ## Examples
 
-- `/video walkthrough.mov` — Analyze a local video
-- `/video bug.mp4 --max 30` — More frames for detailed debugging
-- `/video "https://example.com/demo.mp4"` — Analyze from URL
+- `/video-analyzer:video walkthrough.mov` — Analyze a local video
+- `/video-analyzer:video bug.mp4 --max 30` — More frames for detailed debugging
+- `/video-analyzer:video "https://example.com/demo.mp4"` — Analyze from URL
 
 ## Behavior
 
