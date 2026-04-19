@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "video-analyzer",
+  "description": "Claude Code plugin that extracts frames from videos (local files or URLs) for visual analysis.",
+  "owner": {
+    "name": "Enrique Mondragon",
+    "email": "xemc@pm.me"
+  },
+  "plugins": [
+    {
+      "name": "video-analyzer",
+      "description": "Extract frames from a video (local file or URL) and analyze them visually. Adds a /video slash command. Requires ffmpeg.",
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://github.com/enrique7mc/video-analyzer"
+    }
+  ]
+}

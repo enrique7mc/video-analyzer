@@ -1,0 +1,10 @@
+{
+  "name": "video-analyzer",
+  "version": "0.1.0",
+  "description": "Extract frames from a video (local file or URL) and analyze them visually with Claude. Requires ffmpeg.",
+  "author": {
+    "name": "Enrique Mondragon",
+    "email": "xemc@pm.me"
+  },
+  "homepage": "https://github.com/enrique7mc/video-analyzer"
+}
